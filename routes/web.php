@@ -5,7 +5,10 @@ use App\Http\Controllers\Web\Admin\AssessmentBatchController;
 use App\Http\Controllers\Web\Admin\AssessmentManagementController;
 use App\Http\Controllers\Web\Admin\CandidateController;
 use App\Http\Controllers\Web\Admin\CompanyController;
+use App\Http\Controllers\Web\Admin\DepartmentController;
 use App\Http\Controllers\Web\Admin\HrUserController;
+use App\Http\Controllers\Web\Admin\MasterDataController;
+use App\Http\Controllers\Web\Admin\PositionController;
 use App\Http\Controllers\Web\Admin\OrganizationController;
 use App\Http\Controllers\Web\AdminDashboardController;
 use App\Http\Controllers\Web\BatchGuestController;
@@ -92,6 +95,26 @@ Route::middleware(['auth', 'permission:admin.dashboard', 'organization.scope'])-
     Route::middleware('permission:organizations.view_own')->group(function () {
         Route::get('/company', [CompanyController::class, 'edit'])->name('company.edit');
         Route::patch('/company', [CompanyController::class, 'update'])->name('company.update');
+    });
+
+    // HR/Admin saja: master data per tenant (bukan superadmin)
+    Route::middleware(['role:admin', 'permission:master_data.view'])->group(function () {
+        Route::get('/master-data', [MasterDataController::class, 'index'])->name('master-data.index');
+        Route::get('/master-data/departments', [DepartmentController::class, 'index'])->name('master-data.departments.index');
+        Route::get('/master-data/positions', [PositionController::class, 'index'])->name('master-data.positions.index');
+    });
+    Route::middleware(['role:admin', 'permission:master_data.manage'])->group(function () {
+        Route::get('/master-data/departments/create', [DepartmentController::class, 'create'])->name('master-data.departments.create');
+        Route::post('/master-data/departments', [DepartmentController::class, 'store'])->name('master-data.departments.store');
+        Route::get('/master-data/departments/{department}/edit', [DepartmentController::class, 'edit'])->name('master-data.departments.edit');
+        Route::patch('/master-data/departments/{department}', [DepartmentController::class, 'update'])->name('master-data.departments.update');
+        Route::delete('/master-data/departments/{department}', [DepartmentController::class, 'destroy'])->name('master-data.departments.destroy');
+
+        Route::get('/master-data/positions/create', [PositionController::class, 'create'])->name('master-data.positions.create');
+        Route::post('/master-data/positions', [PositionController::class, 'store'])->name('master-data.positions.store');
+        Route::get('/master-data/positions/{position}/edit', [PositionController::class, 'edit'])->name('master-data.positions.edit');
+        Route::patch('/master-data/positions/{position}', [PositionController::class, 'update'])->name('master-data.positions.update');
+        Route::delete('/master-data/positions/{position}', [PositionController::class, 'destroy'])->name('master-data.positions.destroy');
     });
 
     // HR/Admin: kandidat/karyawan

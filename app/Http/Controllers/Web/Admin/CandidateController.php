@@ -3,15 +3,19 @@
 namespace App\Http\Controllers\Web\Admin;
 
 use App\Http\Controllers\Web\BaseController;
+use App\Models\Department;
+use App\Models\Position;
 use App\Models\User;
 use App\Models\UserDetail;
 use App\Services\ActivityLogService;
 use App\Support\OrganizationContext;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use Illuminate\Validation\Rule;
 use Illuminate\View\View;
 
 class CandidateController extends BaseController
@@ -28,7 +32,7 @@ class CandidateController extends BaseController
 
         $candidates = User::role('candidate')
             ->where('organization_id', $orgId)
-            ->with('userDetail')
+            ->with(['userDetail.departmentEntity', 'userDetail.positionEntity'])
             ->orderBy('name')
             ->paginate(15);
 
@@ -39,7 +43,7 @@ class CandidateController extends BaseController
     {
         $this->authorize('createCandidate', User::class);
 
-        return view('admin.candidates.create');
+        return view('admin.candidates.create', $this->masterDataFormContext($orgId = OrganizationContext::requireOrganizationId(Auth::user())));
     }
 
     public function store(Request $request): RedirectResponse
@@ -48,16 +52,8 @@ class CandidateController extends BaseController
 
         $orgId = OrganizationContext::requireOrganizationId(Auth::user());
 
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:users,email',
-            'employee_id' => 'nullable|string|max:50',
-            'phone' => 'nullable|string|max:30',
-            'position' => 'nullable|string|max:100',
-            'department' => 'nullable|string|max:100',
-            'birth_date' => 'nullable|date',
-            'gender' => 'nullable|in:male,female,other',
-        ]);
+        $validated = $request->validate($this->candidateRules($orgId));
+        $this->assertPositionBelongsToDepartment($validated, $orgId);
 
         $user = User::create([
             'name' => $validated['name'],
@@ -69,16 +65,10 @@ class CandidateController extends BaseController
 
         $user->assignRole('candidate');
 
-        UserDetail::create([
-            'user_id' => $user->id,
-            'employee_id' => $validated['employee_id'] ?? null,
-            'phone' => $validated['phone'] ?? null,
-            'position' => $validated['position'] ?? null,
-            'department' => $validated['department'] ?? null,
-            'birth_date' => $validated['birth_date'] ?? null,
-            'gender' => $validated['gender'] ?? null,
-            'language' => 'id',
-        ]);
+        UserDetail::create(array_merge(
+            ['user_id' => $user->id, 'language' => 'id'],
+            $this->detailPayload($validated, $orgId)
+        ));
 
         $this->activityLog->log('candidate.created', "Candidate {$user->email} created");
 
@@ -93,7 +83,12 @@ class CandidateController extends BaseController
 
         $candidate->load('userDetail');
 
-        return view('admin.candidates.edit', compact('candidate'));
+        $orgId = OrganizationContext::requireOrganizationId(Auth::user());
+
+        return view('admin.candidates.edit', array_merge(
+            compact('candidate'),
+            $this->masterDataFormContext($orgId)
+        ));
     }
 
     public function update(Request $request, User $candidate): RedirectResponse
@@ -101,16 +96,10 @@ class CandidateController extends BaseController
         $this->authorize('update', $candidate);
         abort_unless($candidate->hasRole('candidate'), 404);
 
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:users,email,'.$candidate->id,
-            'employee_id' => 'nullable|string|max:50',
-            'phone' => 'nullable|string|max:30',
-            'position' => 'nullable|string|max:100',
-            'department' => 'nullable|string|max:100',
-            'birth_date' => 'nullable|date',
-            'gender' => 'nullable|in:male,female,other',
-        ]);
+        $orgId = OrganizationContext::requireOrganizationId(Auth::user());
+
+        $validated = $request->validate($this->candidateRules($orgId, $candidate->id));
+        $this->assertPositionBelongsToDepartment($validated, $orgId);
 
         $candidate->update([
             'name' => $validated['name'],
@@ -119,14 +108,7 @@ class CandidateController extends BaseController
 
         $candidate->userDetail()->updateOrCreate(
             ['user_id' => $candidate->id],
-            [
-                'employee_id' => $validated['employee_id'] ?? null,
-                'phone' => $validated['phone'] ?? null,
-                'position' => $validated['position'] ?? null,
-                'department' => $validated['department'] ?? null,
-                'birth_date' => $validated['birth_date'] ?? null,
-                'gender' => $validated['gender'] ?? null,
-            ]
+            $this->detailPayload($validated, $orgId)
         );
 
         return redirect()->route('admin.candidates.index')
@@ -142,5 +124,110 @@ class CandidateController extends BaseController
 
         return redirect()->route('admin.candidates.index')
             ->with('success', __('Data kandidat/karyawan berhasil dihapus.'));
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    private function candidateRules(int $orgId, ?int $userId = null): array
+    {
+        $emailRule = 'required|email|unique:users,email';
+        if ($userId) {
+            $emailRule .= ','.$userId;
+        }
+
+        return [
+            'name' => 'required|string|max:255',
+            'email' => $emailRule,
+            'employee_id' => 'nullable|string|max:50',
+            'phone' => 'nullable|string|max:30',
+            'department_id' => [
+                'nullable',
+                Rule::exists('departments', 'id')->where(function ($query) use ($orgId) {
+                    $query->where('organization_id', $orgId)->where('is_active', true);
+                }),
+            ],
+            'position_id' => [
+                'nullable',
+                Rule::exists('positions', 'id')->where(function ($query) use ($orgId) {
+                    $query->where('organization_id', $orgId)->where('is_active', true);
+                }),
+            ],
+            'birth_date' => 'nullable|date',
+            'gender' => 'nullable|in:male,female,other',
+        ];
+    }
+
+    /**
+     * @return array{departments: \Illuminate\Database\Eloquent\Collection, positions: \Illuminate\Database\Eloquent\Collection}
+     */
+    private function masterDataFormContext(int $orgId): array
+    {
+        return [
+            'departments' => Department::query()
+                ->where('organization_id', $orgId)
+                ->where('is_active', true)
+                ->orderBy('name')
+                ->get(),
+            'positions' => Position::query()
+                ->where('organization_id', $orgId)
+                ->where('is_active', true)
+                ->with('department')
+                ->orderBy('name')
+                ->get(),
+        ];
+    }
+
+    /**
+     * @param  array<string, mixed>  $validated
+     * @return array<string, mixed>
+     */
+    private function detailPayload(array $validated, int $orgId): array
+    {
+        $department = ! empty($validated['department_id'])
+            ? Department::query()->where('organization_id', $orgId)->find($validated['department_id'])
+            : null;
+
+        $position = ! empty($validated['position_id'])
+            ? Position::query()->where('organization_id', $orgId)->find($validated['position_id'])
+            : null;
+
+        return [
+            'employee_id' => $validated['employee_id'] ?? null,
+            'phone' => $validated['phone'] ?? null,
+            'department_id' => $department?->id,
+            'department' => $department?->name,
+            'position_id' => $position?->id,
+            'position' => $position?->name,
+            'birth_date' => $validated['birth_date'] ?? null,
+            'gender' => $validated['gender'] ?? null,
+        ];
+    }
+
+    /**
+     * @param  array<string, mixed>  $validated
+     */
+    private function assertPositionBelongsToDepartment(array $validated, int $orgId): void
+    {
+        if (empty($validated['position_id'])) {
+            return;
+        }
+
+        if (empty($validated['department_id'])) {
+            throw ValidationException::withMessages([
+                'position_id' => __('Pilih departemen sebelum memilih posisi.'),
+            ]);
+        }
+
+        $position = Position::query()
+            ->where('organization_id', $orgId)
+            ->where('is_active', true)
+            ->find($validated['position_id']);
+
+        if (! $position || (int) $position->department_id !== (int) $validated['department_id']) {
+            throw ValidationException::withMessages([
+                'position_id' => __('Posisi harus sesuai dengan departemen yang dipilih.'),
+            ]);
+        }
     }
 }

@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
             SuperadminSeeder::class,
             AdminSeeder::class,
             CandidateSeeder::class,
+            MasterDataSeeder::class,
         ]);
     }
 }

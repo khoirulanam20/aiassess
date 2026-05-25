@@ -18,6 +18,8 @@ class RbacSeeder extends Seeder
             'profile.view_own', 'profile.update_own',
             // Candidates / Employees (HR scoped, no login)
             'candidates.view', 'candidates.create', 'candidates.update', 'candidates.delete',
+            // Master data (departments & positions, org-scoped)
+            'master_data.view', 'master_data.manage',
             // Assessment batches (HR scoped)
             'batches.view', 'batches.create', 'batches.update', 'batches.delete',
             // Assessment & Results (staff only — guests take via share link)
@@ -41,7 +43,11 @@ class RbacSeeder extends Seeder
         }
 
         $superadmin = Role::create(['name' => 'superadmin', 'guard_name' => 'web']);
-        $superadmin->givePermissionTo(Permission::all());
+        $superadmin->givePermissionTo(
+            Permission::query()
+                ->where('name', 'not like', 'master_data.%')
+                ->pluck('name')
+        );
 
         $admin = Role::create(['name' => 'admin', 'guard_name' => 'web']);
         $admin->givePermissionTo([
@@ -55,6 +61,7 @@ class RbacSeeder extends Seeder
             'candidates.view', 'candidates.create', 'candidates.update', 'candidates.delete',
             'batches.view', 'batches.create', 'batches.update', 'batches.delete',
             'assessments.manage_org',
+            'master_data.view', 'master_data.manage',
         ]);
 
         // Kandidat: data profil saja, tidak bisa login & tidak punya permission

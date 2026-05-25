@@ -20,6 +20,8 @@ class UserDetail extends Model
         'company',
         'position',
         'department',
+        'department_id',
+        'position_id',
     ];
 
     protected function casts(): array
@@ -32,5 +34,25 @@ class UserDetail extends Model
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function departmentEntity(): BelongsTo
+    {
+        return $this->belongsTo(Department::class, 'department_id');
+    }
+
+    public function positionEntity(): BelongsTo
+    {
+        return $this->belongsTo(Position::class, 'position_id');
+    }
+
+    public function departmentLabel(): ?string
+    {
+        return $this->departmentEntity?->name ?? $this->department;
+    }
+
+    public function positionLabel(): ?string
+    {
+        return $this->positionEntity?->name ?? $this->position;
     }
 }

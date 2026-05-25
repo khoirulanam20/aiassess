@@ -16,7 +16,7 @@
                     <th class="px-6 py-3 text-left text-xs font-medium uppercase text-gray-500">{{ __('Nama') }}</th>
                     <th class="px-6 py-3 text-left text-xs font-medium uppercase text-gray-500">{{ __('Email') }}</th>
                     <th class="px-6 py-3 text-left text-xs font-medium uppercase text-gray-500">{{ __('ID Karyawan') }}</th>
-                    <th class="px-6 py-3 text-left text-xs font-medium uppercase text-gray-500">{{ __('Departemen') }}</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium uppercase text-gray-500">{{ __('Departemen / Posisi') }}</th>
                     <th class="px-6 py-3 text-right text-xs font-medium uppercase text-gray-500">{{ __('Aksi') }}</th>
                 </tr>
             </thead>
@@ -26,7 +26,12 @@
                         <td class="px-6 py-4 text-sm font-medium text-ink">{{ $candidate->name }}</td>
                         <td class="px-6 py-4 text-sm text-gray-500">{{ $candidate->email }}</td>
                         <td class="px-6 py-4 text-sm text-gray-500">{{ $candidate->userDetail?->employee_id ?? '—' }}</td>
-                        <td class="px-6 py-4 text-sm text-gray-500">{{ $candidate->userDetail?->department ?? '—' }}</td>
+                        <td class="px-6 py-4 text-sm text-gray-500">
+                            {{ $candidate->userDetail?->departmentLabel() ?? '—' }}
+                            @if ($candidate->userDetail?->positionLabel())
+                                <span class="block text-xs text-gray-400">{{ $candidate->userDetail->positionLabel() }}</span>
+                            @endif
+                        </td>
                         <td class="px-6 py-4 text-right">
                             <x-ui.icon-action :href="route('admin.candidates.edit', $candidate)" variant="primary" :title="__('Edit kandidat')">
                                 <x-ui.icon name="pencil" />

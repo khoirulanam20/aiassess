@@ -7,6 +7,8 @@ use App\Models\AssessmentBatch;
 use App\Models\AssessmentBatchAssignment;
 use App\Models\AssessmentBatchShare;
 use App\Models\AssessmentResult;
+use App\Models\Department;
+use App\Models\Position;
 use App\Models\User;
 use App\Services\ActivityLogService;
 use App\Services\AssessmentBatchService;
@@ -53,11 +55,23 @@ class AssessmentBatchController extends BaseController
         $assessments = $this->batchService->enabledAssessmentsForOrganization($orgId);
         $candidates = User::role('candidate')
             ->where('organization_id', $orgId)
-            ->with('userDetail')
+            ->with(['userDetail.departmentEntity', 'userDetail.positionEntity'])
             ->orderBy('name')
             ->get();
 
-        return view('admin.batches.create', compact('assessments', 'candidates'));
+        $departments = Department::query()
+            ->where('organization_id', $orgId)
+            ->where('is_active', true)
+            ->orderBy('name')
+            ->get();
+
+        $positions = Position::query()
+            ->where('organization_id', $orgId)
+            ->where('is_active', true)
+            ->orderBy('name')
+            ->get();
+
+        return view('admin.batches.create', compact('assessments', 'candidates', 'departments', 'positions'));
     }
 
     public function store(Request $request): RedirectResponse

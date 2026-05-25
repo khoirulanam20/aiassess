@@ -68,7 +68,16 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Gate::before(function ($user, $ability) {
-            return $user->hasRole('superadmin') ? true : null;
+            if (! $user->hasRole('superadmin')) {
+                return null;
+            }
+
+            // Master data hanya untuk HR/Admin per tenant, bukan superadmin.
+            if (str_starts_with($ability, 'master_data.')) {
+                return false;
+            }
+
+            return true;
         });
 
         $this->app->booted(function () {
