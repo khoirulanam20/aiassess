@@ -1,0 +1,467 @@
+<div class="min-h-[640px] bg-white">
+  <div x-data="{ open: false }" @keydown.window.escape="open = false">
+    {{>"global/navbar"}} {{>"global/mobileNavigation"}}
+    <!-- Static sidebar for desktop -->
+    {{>"global/desktopNavigation"}}
+    <div class="relative z-0 flex flex-1 overflow-hidden">
+      <div class="relative z-0 flex-1 overflow-y-auto focus:outline-none lg:pl-72">
+        <!-- Start main area-->
+        <div class="flex-1 mx-auto">
+          <section class="
+              mx-auto
+              bg-white
+              border-b
+              dark:bg-tuna
+              border-periblue
+              max-w-7xl
+              dark:border-gun
+            ">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 md:px-32 pt-44">
+              <h1 data-animate="title" class="
+                  py-10
+                  mx-auto
+                  text-4xl
+                  font-light
+                  leading-none
+                  tracking-tighter
+                  text-comet
+                  dark:text-manatee
+                  lg:text-5xl
+                ">
+                Developing: <span class="text-periblue">Frameworks</span>
+              </h1>
+            </div>
+          </section>
+          <section class="pt-6 pb-24 bg-white dark:bg-tuna">
+            <div class="px-4 mx-auto sm:px-6 md:px-32">
+              <!-- Replace with your content -->
+              <section>
+                <div class="max-w-3xl">
+                  <div class="mx-auto space-y-24 text-lg text-left">
+                    <div class="space-y-8">
+                      <p class="
+                          text-base
+                          font-light
+                          text-waterloo
+                          dark:text-santa
+                          sm:text-lg
+                          md:mt-5 md:text-xl
+                        ">
+                        Dockerz is Wicked's open source design system for
+                        products and digital experiences. With the Wicked Design
+                        Language as its foundation, the system consists of
+                        working code, design tools and resources, human
+                        interface guidelines, and a vibrant community of
+                        contributors.
+                      </p>
+                      <div>
+                        <ul role="list" class="
+                            space-y-3
+                            text-base
+                            list-none
+                            sm:text-lg
+                            md:mt-5 md:text-xl
+                          ">
+                          <li>
+                            <a class="
+                                font-light
+                                text-waterloo
+                                dark:text-santa
+                                hover:text-oyster
+                                dark:hover:text-oyster
+                              " href="#install">
+                              &#8627; Install
+                            </a>
+                          </li>
+                          <li>
+                            <a class="
+                                font-light
+                                text-waterloo
+                                dark:text-santa
+                                hover:text-oyster
+                                dark:hover:text-oyster
+                              " href="#starthere">
+                              &#8627; Start here
+                            </a>
+                          </li>
+                          <li>
+                            <a class="
+                                font-light
+                                text-waterloo
+                                dark:text-santa
+                                hover:text-oyster
+                                dark:hover:text-oyster
+                              " href="#develope">
+                              &#8627; Development
+                            </a>
+                          </li>
+                          <li>
+                            <a class="
+                                font-light
+                                text-waterloo
+                                dark:text-santa
+                                hover:text-oyster
+                                dark:hover:text-oyster
+                              " href="#contact">
+                              &#8627; Contact us
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="space-y-12" id="install">
+                      <h2 class="
+                          text-lg
+                          font-normal
+                          text-comet
+                          dark:text-manatee
+                          hover:text-oyster
+                          lg:text-2xl
+                          group
+                        ">
+                        <a href="" class="
+                            inline-flex
+                            items-center
+                            gap-4
+                            text-comet
+                            dark:text-manatee dark:hover:text-periblue
+                          ">
+                          Install
+                          <svg class="hidden w-6 h-6 group-hover:block" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path fill="currentColor"
+                              d="M17.657 14.828l-1.414-1.414L17.657 12A4 4 0 1 0 12 6.343l-1.414 1.414-1.414-1.414 1.414-1.414a6 6 0 0 1 8.485 8.485l-1.414 1.414zm-2.829 2.829l-1.414 1.414a6 6 0 1 1-8.485-8.485l1.414-1.414 1.414 1.414L6.343 12A4 4 0 1 0 12 17.657l1.414-1.414 1.414 1.414zm0-9.9l1.415 1.415-7.071 7.07-1.415-1.414 7.071-7.07z" />
+                          </svg>
+                        </a>
+                      </h2>
+                      <div class="space-y-6">
+                        <h6 class="text-xl text-comet dark:text-manatee">
+                          2.- Choose your theme
+                        </h6>
+                        <p class="
+                            text-base
+                            font-light
+                            text-waterloo
+                            dark:text-santa
+                            sm:text-lg
+                          ">
+                          Id orci tellus laoreet id ac. Dolor, aenean leo, ac
+                          etiam consequat in.
+                        </p>
+                        <div class="grid grid-cols-1 gap-1 lg:grid-cols-2">
+                          <div>
+                            <div class="
+                                bg-alabaster
+                                sm:rounded-md
+                                dark:bg-cinder dark:border-gun
+                                hover:bg-smoke
+                                dark:hover:bg-gun
+                              ">
+                              <div class="px-4 py-5 sm:p-6">
+                                <h3 class="
+                                    text-lg
+                                    font-medium
+                                    leading-6
+                                    text-comet
+                                    dark:text-white
+                                  ">
+                                  React Library
+                                </h3>
+                                <div class="
+                                    max-w-xl
+                                    mt-2
+                                    text-sm
+                                    font-light
+                                    text-santa
+                                    lg:text-base
+                                  ">
+                                  <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Commodi, totam at
+                                    reprehenderit maxime aut beatae ad.
+                                  </p>
+                                </div>
+                                <div class="mt-3 text-sm">
+                                  <a href="#" class="
+                                      font-light
+                                      text-oyster
+                                      hover:text-comet
+                                      dark:text-periblue dark:hover:text-metal
+                                    ">
+                                    Install
+                                    <span aria-hidden="true">&rarr;</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="
+                                bg-alabaster
+                                sm:rounded-md
+                                dark:bg-cinder dark:border-gun
+                                hover:bg-smoke
+                                dark:hover:bg-gun
+                              ">
+                              <div class="px-4 py-5 sm:p-6">
+                                <h3 class="
+                                    text-lg
+                                    font-medium
+                                    leading-6
+                                    text-comet
+                                    dark:text-white
+                                  ">
+                                  Vue Library
+                                </h3>
+                                <div class="
+                                    max-w-xl
+                                    mt-2
+                                    text-sm
+                                    font-light
+                                    text-santa
+                                    lg:text-base
+                                  ">
+                                  <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Commodi, totam at
+                                    reprehenderit maxime aut beatae ad.
+                                  </p>
+                                </div>
+                                <div class="mt-3 text-sm">
+                                  <a href="#" class="
+                                      font-light
+                                      text-oyster
+                                      hover:text-comet
+                                      dark:text-periblue dark:hover:text-metal
+                                    ">
+                                    Install
+                                    <span aria-hidden="true">&rarr;</span></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h6 class="text-xl text-comet dark:text-manatee">
+                          1.- Using NPM:
+                        </h6>
+                        <div class="w-full prose">
+                          <pre class="rounded-md">
+                            <code>
+npm install --save wicked-components-react wicked-components
+                        </code>
+                      </pre>
+                        </div>
+
+                        <h6 class="text-xl text-comet dark:text-manatee">
+                          2.- If you preffer yarn:
+                        </h6>
+                        <div class="w-full prose">
+                          <pre class="rounded-md">
+
+                            <code>
+yarn add wicked-components-react wicked-components
+                        </code>
+                      </pre>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="space-y-12" id="starthere">
+                      <h2 class="
+                          text-lg
+                          font-normal
+                          text-comet
+                          dark:text-manatee
+                          hover:text-oyster
+                          lg:text-2xl
+                          group
+                        ">
+                        <a href="" class="
+                            inline-flex
+                            items-center
+                            gap-4
+                            text-comet
+                            dark:text-manatee dark:hover:text-periblue
+                          ">
+                          Start here
+                          <svg class="hidden w-6 h-6 group-hover:block" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path fill="currentColor"
+                              d="M17.657 14.828l-1.414-1.414L17.657 12A4 4 0 1 0 12 6.343l-1.414 1.414-1.414-1.414 1.414-1.414a6 6 0 0 1 8.485 8.485l-1.414 1.414zm-2.829 2.829l-1.414 1.414a6 6 0 1 1-8.485-8.485l1.414-1.414 1.414 1.414L6.343 12A4 4 0 1 0 12 17.657l1.414-1.414 1.414 1.414zm0-9.9l1.415 1.415-7.071 7.07-1.415-1.414 7.071-7.07z" />
+                          </svg>
+                        </a>
+                      </h2>
+                      <div lass="space-y-6">
+                        <p class="
+                            text-base
+                            font-light
+                            text-waterloo
+                            dark:text-santa
+                            sm:text-lg
+                          ">
+                          Quis semper vulputate aliquam venenatis egestas
+                          sagittis quisque orci. Donec commodo sit viverra
+                          aliquam porttitor ultrices gravida eu.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="space-y-12" id="develope">
+                      <h2 class="
+                          text-lg
+                          font-normal
+                          text-comet
+                          dark:text-manatee
+                          hover:text-oyster
+                          lg:text-2xl
+                          group
+                        ">
+                        <a href="#" class="inline-flex items-center gap-4">
+                          Develope
+                          <svg class="hidden w-6 h-6 group-hover:block" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path fill="currentColor"
+                              d="M17.657 14.828l-1.414-1.414L17.657 12A4 4 0 1 0 12 6.343l-1.414 1.414-1.414-1.414 1.414-1.414a6 6 0 0 1 8.485 8.485l-1.414 1.414zm-2.829 2.829l-1.414 1.414a6 6 0 1 1-8.485-8.485l1.414-1.414 1.414 1.414L6.343 12A4 4 0 1 0 12 17.657l1.414-1.414 1.414 1.414zm0-9.9l1.415 1.415-7.071 7.07-1.415-1.414 7.071-7.07z" />
+                          </svg>
+                        </a>
+                      </h2>
+                      <div class="space-y-6">
+                        <p class="
+                            text-base
+                            font-light
+                            text-waterloo
+                            dark:text-santa
+                            sm:text-lg
+                          ">
+                          Quis semper vulputate aliquam venenatis egestas
+                          sagittis quisque orci. Donec commodo sit viverra
+                          aliquam porttitor ultrices gravida eu.
+                        </p>
+                        <div>
+                          <ul role="list" class="
+                              space-y-3
+                              text-base
+                              list-none
+                              text-comet
+                              dark:text-manatee
+                              sm:text-lg
+                              md:mt-8 md:text-base
+                            ">
+                            <li>
+                              -
+                              <a class="
+                                  font-light
+                                  text-oyster
+                                  hover:text-comet
+                                  dark:text-periblue dark:hover:text-metal
+                                " href="#">
+                                Alpine
+                              </a>
+                              Donec sit utate aliquam ven.
+                            </li>
+                            <li>
+                              -
+                              <a class="
+                                  font-light
+                                  text-oyster
+                                  hover:text-comet
+                                  dark:text-periblue dark:hover:text-metal
+                                " href="#">
+                                Next.js
+                              </a>
+                              Donec commodo sit utate aliquam.
+                            </li>
+                            <li>
+                              -
+                              <a class="
+                                  font-light
+                                  text-oyster
+                                  hover:text-comet
+                                  dark:text-periblue dark:hover:text-metal
+                                " href="#">
+                                React
+                              </a>
+                              Donec sit.
+                            </li>
+                            <li>
+                              -
+                              <a class="
+                                  font-light
+                                  text-oyster
+                                  hover:text-comet
+                                  dark:text-periblue dark:hover:text-metal
+                                " href="#">
+                                Vue
+                              </a>
+                              Donec commodo.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="space-y-12" id="develope">
+                        <h2 class="
+                            text-lg
+                            font-normal
+                            text-comet
+                            dark:text-manatee
+                            hover:text-oyster
+                            lg:text-2xl
+                            group
+                          ">
+                          <a href="#" class="inline-flex items-center gap-4">
+                            Teck develope used on Dockerz
+                            <svg class="hidden w-6 h-6 group-hover:block" xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24">
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path fill="currentColor"
+                                d="M17.657 14.828l-1.414-1.414L17.657 12A4 4 0 1 0 12 6.343l-1.414 1.414-1.414-1.414 1.414-1.414a6 6 0 0 1 8.485 8.485l-1.414 1.414zm-2.829 2.829l-1.414 1.414a6 6 0 1 1-8.485-8.485l1.414-1.414 1.414 1.414L6.343 12A4 4 0 1 0 12 17.657l1.414-1.414 1.414 1.414zm0-9.9l1.415 1.415-7.071 7.07-1.415-1.414 7.071-7.07z" />
+                            </svg>
+                          </a>
+                        </h2>
+                        <figure class="mt-12">
+                          <img class="w-full rounded-lg"
+                            src="https://public-files.gumroad.com/fick5lnkpxsvwjeqdhhesia4g7qc" alt="" width="1310"
+                            height="873" />
+                          <figcaption class="mt-4 text-xs text-santa">
+                            <span class="sr-only">
+                              Sagittis scelerisque nulla cursus in enim
+                              consectetur quam.
+                            </span>
+                            Sagittis scelerisque nulla cursus in enim
+                            consectetur quam.
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                    <div>
+                      <h6 class="
+                          text-sm
+                          font-normal
+                          underline
+                          text-comet
+                          dark:text-manatee
+                          hover:text-oyster
+                        ">
+                        <a href=""> Edit this page on GitHub </a>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
+          {{>"global/pagination"}}
+        </div>
+        <!-- End div area -->
+      </div>
+      <!--
+         You can insert a third column here, is already built and it will be fixed and hidden on phone.-->
+      <!--
+        End secondary column
+       -->
+    </div>
+  </div>
+</div>
