@@ -5,6 +5,7 @@ namespace Tests\Feature\Admin;
 use App\Models\Assessment;
 use App\Models\User;
 use App\Services\QuestionService;
+use Database\Seeders\AssessmentQuestionsSeeder;
 use Database\Seeders\AssessmentSeeder;
 use Database\Seeders\OrganizationSeeder;
 use Database\Seeders\RbacSeeder;
@@ -25,6 +26,7 @@ class GlobalAssessmentQuestionsTest extends TestCase
         $this->seed(RbacSeeder::class);
         $this->seed(OrganizationSeeder::class);
         $this->seed(AssessmentSeeder::class);
+        $this->seed(AssessmentQuestionsSeeder::class);
 
         $this->superadmin = User::factory()->create();
         $this->superadmin->assignRole('superadmin');

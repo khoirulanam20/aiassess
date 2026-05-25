@@ -1,0 +1,12 @@
+{
+  "type": "D",
+  "name": "Dominance",
+  "title": "The Director",
+  "description": "Anda adalah pribadi yang tegas, langsung, dan berorientasi pada hasil. Anda unggul dalam memimpin, mengambil keputusan cepat, dan mengatasi tantangan. Anda termotivasi oleh pencapaian dan kompetisi.",
+  "strengths": ["Kepemimpinan kuat", "Pengambilan keputusan cepat", "Berorientasi pada hasil", "Percaya diri", "Inisiatif tinggi"],
+  "weaknesses": ["Kurang sabar", "Cenderung bossy", "Kurang peka terhadap perasaan", "Terlalu kompetitif"],
+  "communication_style": "Langsung, to the point, dan suka tantangan",
+  "motivations": ["Kekuasaan", "Otoritas", "Pencapaian", "Tantangan", "Kebebasan"],
+  "fears": ["Kehilangan kendali", "Dimanfaatkan", "Kegagalan", "Kebosanan"],
+  "career_paths": ["CEO", "Manajer Senior", "Pengusaha", "Direktur", "Konsultan Manajemen"]
+}

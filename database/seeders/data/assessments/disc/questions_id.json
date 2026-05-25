@@ -1,0 +1,530 @@
+[
+    {
+        "code": "Q01",
+        "question": "Pertanyaan uji diubah superadmin",
+        "options": [
+            {
+                "id": "A",
+                "text": "Langsung mengambil tindakan dan memimpin"
+            },
+            {
+                "id": "B",
+                "text": "Menggunakan pendekatan yang tidak setuju"
+            },
+            {
+                "id": "C",
+                "text": "Bersikap hati-hati dan mempertimbangkan"
+            },
+            {
+                "id": "D",
+                "text": "Menyesuaikan diri dengan situasi"
+            }
+        ]
+    },
+    {
+        "code": "Q02",
+        "question": "Dalam situasi sosial, saya...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Cenderung tegas dan langsung"
+            },
+            {
+                "id": "B",
+                "text": "Mudah bergaul dan ramah"
+            },
+            {
+                "id": "C",
+                "text": "Lebih suka mendengarkan"
+            },
+            {
+                "id": "D",
+                "text": "Analitis dan observatif"
+            }
+        ]
+    },
+    {
+        "code": "Q03",
+        "question": "Ketika menghadapi tekanan...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Saya menjadi lebih tegas dan dominan"
+            },
+            {
+                "id": "B",
+                "text": "Saya mencari dukungan dari orang lain"
+            },
+            {
+                "id": "C",
+                "text": "Saya tetap tenang dan konsisten"
+            },
+            {
+                "id": "D",
+                "text": "Saya menganalisis situasi secara detail"
+            }
+        ]
+    },
+    {
+        "code": "Q04",
+        "question": "Saya lebih suka bekerja...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Secara mandiri dan penuh tantangan"
+            },
+            {
+                "id": "B",
+                "text": "Dalam tim yang dinamis"
+            },
+            {
+                "id": "C",
+                "text": "Dalam lingkungan yang stabil dan terprediksi"
+            },
+            {
+                "id": "D",
+                "text": "Dengan data dan prosedur yang jelas"
+            }
+        ]
+    },
+    {
+        "code": "Q05",
+        "question": "Dalam memecahkan masalah, saya...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Cepat mengambil keputusan"
+            },
+            {
+                "id": "B",
+                "text": "Mendiskusikannya dengan orang lain"
+            },
+            {
+                "id": "C",
+                "text": "Mencari solusi yang sudah terbukti"
+            },
+            {
+                "id": "D",
+                "text": "Menganalisis semua kemungkinan secara detail"
+            }
+        ]
+    },
+    {
+        "code": "Q06",
+        "question": "Saya paling termotivasi ketika...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Saya bisa mencapai hasil yang signifikan"
+            },
+            {
+                "id": "B",
+                "text": "Saya diakui dan dihargai orang lain"
+            },
+            {
+                "id": "C",
+                "text": "Ada harmoni dan kerja sama tim"
+            },
+            {
+                "id": "D",
+                "text": "Ada standar kualitas yang tinggi"
+            }
+        ]
+    },
+    {
+        "code": "Q07",
+        "question": "Orang lain menggambarkan saya sebagai...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Tegas dan berorientasi pada hasil"
+            },
+            {
+                "id": "B",
+                "text": "Ramah dan persuasif"
+            },
+            {
+                "id": "C",
+                "text": "Sabar dan dapat diandalkan"
+            },
+            {
+                "id": "D",
+                "text": "Teliti dan sistematis"
+            }
+        ]
+    },
+    {
+        "code": "Q08",
+        "question": "Saya merasa frustrasi ketika...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Hal-hal berjalan terlalu lambat"
+            },
+            {
+                "id": "B",
+                "text": "Saya tidak mendapat pengakuan"
+            },
+            {
+                "id": "C",
+                "text": "Terjadi konflik dalam tim"
+            },
+            {
+                "id": "D",
+                "text": "Ada kesalahan atau ketidakakuratan"
+            }
+        ]
+    },
+    {
+        "code": "Q09",
+        "question": "Saya lebih nyaman mengambil risiko...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Tinggi untuk hasil yang besar"
+            },
+            {
+                "id": "B",
+                "text": "Moderat dengan dukungan tim"
+            },
+            {
+                "id": "C",
+                "text": "Rendah dan sudah teruji"
+            },
+            {
+                "id": "D",
+                "text": "Setelah analisis risiko menyeluruh"
+            }
+        ]
+    },
+    {
+        "code": "Q10",
+        "question": "Dalam komunikasi, saya cenderung...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Langsung dan to the point"
+            },
+            {
+                "id": "B",
+                "text": "Antusias dan ekspresif"
+            },
+            {
+                "id": "C",
+                "text": "Ramah dan mendukung"
+            },
+            {
+                "id": "D",
+                "text": "Terstruktur dan faktual"
+            }
+        ]
+    },
+    {
+        "code": "Q11",
+        "question": "Saya menghargai...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Efisiensi dan pencapaian"
+            },
+            {
+                "id": "B",
+                "text": "Hubungan dan interaksi sosial"
+            },
+            {
+                "id": "C",
+                "text": "Stabilitas dan konsistensi"
+            },
+            {
+                "id": "D",
+                "text": "Akurasi dan kualitas"
+            }
+        ]
+    },
+    {
+        "code": "Q12",
+        "question": "Ketika ada perubahan, saya...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Cepat beradaptasi dan memimpin perubahan"
+            },
+            {
+                "id": "B",
+                "text": "Antusias dan optimis"
+            },
+            {
+                "id": "C",
+                "text": "Butuh waktu untuk menyesuaikan diri"
+            },
+            {
+                "id": "D",
+                "text": "Menganalisis dampak perubahan secara detail"
+            }
+        ]
+    },
+    {
+        "code": "Q13",
+        "question": "Saya lebih percaya pada...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Insting dan keputusan cepat"
+            },
+            {
+                "id": "B",
+                "text": "Pendapat dan masukan orang lain"
+            },
+            {
+                "id": "C",
+                "text": "Metode yang sudah teruji"
+            },
+            {
+                "id": "D",
+                "text": "Data dan fakta objektif"
+            }
+        ]
+    },
+    {
+        "code": "Q14",
+        "question": "Dalam rapat, saya biasanya...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Memimpin diskusi dan mengambil kendali"
+            },
+            {
+                "id": "B",
+                "text": "Mencairkan suasana dengan humor"
+            },
+            {
+                "id": "C",
+                "text": "Mendukung ide orang lain"
+            },
+            {
+                "id": "D",
+                "text": "Mencatat dan menganalisis poin-poin penting"
+            }
+        ]
+    },
+    {
+        "code": "Q15",
+        "question": "Saya paling produktif dalam lingkungan...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Kompetitif dan menantang"
+            },
+            {
+                "id": "B",
+                "text": "Sosial dan kolaboratif"
+            },
+            {
+                "id": "C",
+                "text": "Tenang dan terstruktur"
+            },
+            {
+                "id": "D",
+                "text": "Teratur dan berbasis aturan"
+            }
+        ]
+    },
+    {
+        "code": "Q16",
+        "question": "Saya cenderung mengambil keputusan berdasarkan...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Hasil dan keuntungan jangka pendek"
+            },
+            {
+                "id": "B",
+                "text": "Perasaan dan intuisi"
+            },
+            {
+                "id": "C",
+                "text": "Pengalaman masa lalu"
+            },
+            {
+                "id": "D",
+                "text": "Analisis data yang mendalam"
+            }
+        ]
+    },
+    {
+        "code": "Q17",
+        "question": "Kekuatan utama saya adalah...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Kemampuan memimpin dan mengambil inisiatif"
+            },
+            {
+                "id": "B",
+                "text": "Kemampuan membangun hubungan"
+            },
+            {
+                "id": "C",
+                "text": "Kesabaran dan konsistensi"
+            },
+            {
+                "id": "D",
+                "text": "Ketelitian dan analisis"
+            }
+        ]
+    },
+    {
+        "code": "Q18",
+        "question": "Saya belajar paling baik ketika...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Saya langsung mempraktikkannya"
+            },
+            {
+                "id": "B",
+                "text": "Saya berdiskusi dengan orang lain"
+            },
+            {
+                "id": "C",
+                "text": "Ada panduan langkah demi langkah"
+            },
+            {
+                "id": "D",
+                "text": "Saya membaca dan meneliti secara mandiri"
+            }
+        ]
+    },
+    {
+        "code": "Q19",
+        "question": "Dalam konflik, saya cenderung...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Menghadapi dan menyelesaikan langsung"
+            },
+            {
+                "id": "B",
+                "text": "Mencari kompromi dan mediasi"
+            },
+            {
+                "id": "C",
+                "text": "Menghindari dan menjaga harmoni"
+            },
+            {
+                "id": "D",
+                "text": "Menganalisis akar masalah secara logis"
+            }
+        ]
+    },
+    {
+        "code": "Q20",
+        "question": "Saya lebih menyukai tugas yang...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Menantang dan bervariasi"
+            },
+            {
+                "id": "B",
+                "text": "Melibatkan interaksi dengan orang"
+            },
+            {
+                "id": "C",
+                "text": "Rutin dan dapat diprediksi"
+            },
+            {
+                "id": "D",
+                "text": "Kompleks dan membutuhkan analisis"
+            }
+        ]
+    },
+    {
+        "code": "Q21",
+        "question": "Saya paling tidak suka...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Kehilangan kendali atas situasi"
+            },
+            {
+                "id": "B",
+                "text": "Diabaikan atau tidak dihargai"
+            },
+            {
+                "id": "C",
+                "text": "Perubahan yang terlalu drastis"
+            },
+            {
+                "id": "D",
+                "text": "Ketidakrapian dan kesalahan"
+            }
+        ]
+    },
+    {
+        "code": "Q22",
+        "question": "Teman-teman saya akan mengatakan saya...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Percaya diri dan ambisius"
+            },
+            {
+                "id": "B",
+                "text": "Ramah dan mudah bergaul"
+            },
+            {
+                "id": "C",
+                "text": "Pendengar yang baik"
+            },
+            {
+                "id": "D",
+                "text": "Teliti dan terorganisir"
+            }
+        ]
+    },
+    {
+        "code": "Q23",
+        "question": "Saya bereaksi terhadap kritik dengan...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Membela diri dan berargumen"
+            },
+            {
+                "id": "B",
+                "text": "Menerima dan mencari dukungan"
+            },
+            {
+                "id": "C",
+                "text": "Merenung dan introspeksi"
+            },
+            {
+                "id": "D",
+                "text": "Menganalisis kebenaran kritik tersebut"
+            }
+        ]
+    },
+    {
+        "code": "Q24",
+        "question": "Saya mendefinisikan kesuksesan sebagai...",
+        "options": [
+            {
+                "id": "A",
+                "text": "Mencapai tujuan dan mengatasi tantangan"
+            },
+            {
+                "id": "B",
+                "text": "Memiliki banyak teman dan koneksi"
+            },
+            {
+                "id": "C",
+                "text": "Hidup damai dan seimbang"
+            },
+            {
+                "id": "D",
+                "text": "Mencapai standar kualitas tertinggi"
+            }
+        ]
+    }
+]

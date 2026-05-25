@@ -1,0 +1,12 @@
+[
+  {"code":"CL01","question":"Sebuah kubus memiliki berapa titik sudut?","options":[{"id":"A","text":"4"},{"id":"B","text":"6"},{"id":"C","text":"8"},{"id":"D","text":"10"},{"id":"E","text":"12"}],"correct":"C"},
+  {"code":"CL02","question":"Jika persegi diputar 90°, bentuknya menjadi?","options":[{"id":"A","text":"Persegi juga"},{"id":"B","text":"Persegi panjang"},{"id":"C","text":"Lingkaran"},{"id":"D","text":"Segitiga"},{"id":"E","text":"Belah ketupat"}],"correct":"A"},
+  {"code":"CL03","question":"Berapa sumbu simetri pada persegi?","options":[{"id":"A","text":"2"},{"id":"B","text":"3"},{"id":"C","text":"4"},{"id":"D","text":"5"},{"id":"E","text":"6"}],"correct":"C"},
+  {"code":"CL04","question":"Jika sebuah peta memiliki skala 1:100.000, 5 cm di peta mewakili... km","options":[{"id":"A","text":"3"},{"id":"B","text":"4"},{"id":"C","text":"5"},{"id":"D","text":"6"},{"id":"E","text":"7"}],"correct":"C"},
+  {"code":"CL05","question":"Bayangan dari huruf 'b' di cermin adalah?","options":[{"id":"A","text":"b"},{"id":"B","text":"d"},{"id":"C","text":"p"},{"id":"D","text":"q"},{"id":"E","text":"g"}],"correct":"B"},
+  {"code":"CL06","question":"Berapa diagonal ruang pada kubus?","options":[{"id":"A","text":"2"},{"id":"B","text":"3"},{"id":"C","text":"4"},{"id":"D","text":"5"},{"id":"E","text":"6"}],"correct":"C"},
+  {"code":"CL07","question":"Jika jam menunjukkan pukul 03.00, sudut terkecil antara jarum jam dan menit adalah?","options":[{"id":"A","text":"30°"},{"id":"B","text":"45°"},{"id":"C","text":"60°"},{"id":"D","text":"90°"},{"id":"E","text":"120°"}],"correct":"D"},
+  {"code":"CL08","question":"Jaring-jaring kubus terdiri dari berapa persegi?","options":[{"id":"A","text":"4"},{"id":"B","text":"5"},{"id":"C","text":"6"},{"id":"D","text":"7"},{"id":"E","text":"8"}],"correct":"C"},
+  {"code":"CL09","question":"Jika koordinat titik A(2,3) dicerminkan terhadap sumbu x, bayangannya?","options":[{"id":"A","text":"(2,-3)"},{"id":"B","text":"(-2,3)"},{"id":"C","text":"(-2,-3)"},{"id":"D","text":"(3,2)"},{"id":"E","text":"(3,-2)"}],"correct":"A"},
+  {"code":"CL10","question":"Sebuah balok memiliki ukuran 2×3×4. Berapa volumenya?","options":[{"id":"A","text":"20"},{"id":"B","text":"24"},{"id":"C","text":"26"},{"id":"D","text":"28"},{"id":"E","text":"30"}],"correct":"B"}
+]

@@ -1,0 +1,12 @@
+{
+  "type": "I",
+  "name": "Influence",
+  "title": "The Socializer",
+  "description": "Anda adalah pribadi yang ramah, antusias, dan persuasif. Anda unggul dalam membangun hubungan, memotivasi orang lain, dan menciptakan lingkungan yang positif. Anda termotivasi oleh pengakuan dan interaksi sosial.",
+  "strengths": ["Komunikatif", "Karismatik", "Optimis", "Mudah bergaul", "Kreatif"],
+  "weaknesses": ["Kurang detail", "Terlalu emosional", "Cenderung impulsif", "Kurang terorganisir"],
+  "communication_style": "Antusias, ekspresif, dan suka bercerita",
+  "motivations": ["Pengakuan", "Popularitas", "Hubungan sosial", "Hiburan", "Tim kerja"],
+  "fears": ["Ditolak", "Diabaikan", "Kehilangan pengaruh", "Kritik publik"],
+  "career_paths": ["Sales", "Marketing", "Public Relations", "Presenter", "Event Organizer"]
+}

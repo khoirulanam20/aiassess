@@ -1,0 +1,12 @@
+{
+  "type": "C",
+  "name": "Conscientiousness",
+  "title": "The Thinker",
+  "description": "Anda adalah pribadi yang analitis, teliti, dan sistematis. Anda unggul dalam memecahkan masalah kompleks, memastikan kualitas, dan bekerja dengan standar tinggi. Anda termotivasi oleh akurasi dan pengetahuan.",
+  "strengths": ["Analitis", "Teliti", "Sistematis", "Objektif", "Berorientasi pada kualitas"],
+  "weaknesses": ["Cenderung perfeksionis", "Kurang fleksibel", "Overthinking", "Kurang sosial"],
+  "communication_style": "Terstruktur, faktual, dan berbasis data",
+  "motivations": ["Kualitas", "Akurasi", "Standar tinggi", "Pengetahuan", "Kemandirian"],
+  "fears": ["Kesalahan", "Kritik terhadap kerja", "Ketidakrapian", "Keputusan tanpa data"],
+  "career_paths": ["Analis Data", "Akuntan", "Insinyur", "Peneliti", "Ahli IT"]
+}

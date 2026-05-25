@@ -1,0 +1,12 @@
+[
+  {"code":"ET01","question":"15 + 27 = ?","options":[{"id":"A","text":"42"},{"id":"B","text":"32"},{"id":"C","text":"52"},{"id":"D","text":"38"},{"id":"E","text":"48"}],"correct":"A"},
+  {"code":"ET02","question":"144 ÷ 12 = ?","options":[{"id":"A","text":"10"},{"id":"B","text":"11"},{"id":"C","text":"12"},{"id":"D","text":"13"},{"id":"E","text":"14"}],"correct":"C"},
+  {"code":"ET03","question":"25% dari 200 adalah...","options":[{"id":"A","text":"25"},{"id":"B","text":"40"},{"id":"C","text":"50"},{"id":"D","text":"75"},{"id":"E","text":"100"}],"correct":"C"},
+  {"code":"ET04","question":"Jika sebuah baju diskon 30% dari harga Rp150.000, berapa harga setelah diskon?","options":[{"id":"A","text":"Rp95.000"},{"id":"B","text":"Rp100.000"},{"id":"C","text":"Rp105.000"},{"id":"D","text":"Rp110.000"},{"id":"E","text":"Rp120.000"}],"correct":"C"},
+  {"code":"ET05","question":"Rata-rata dari 12, 15, 18, 21, 24 adalah...","options":[{"id":"A","text":"15"},{"id":"B","text":"16"},{"id":"C","text":"17"},{"id":"D","text":"18"},{"id":"E","text":"19"}],"correct":"D"},
+  {"code":"ET06","question":"3^4 = ?","options":[{"id":"A","text":"27"},{"id":"B","text":"64"},{"id":"C","text":"81"},{"id":"D","text":"243"},{"id":"E","text":"729"}],"correct":"C"},
+  {"code":"ET07","question":"Berapa banyak digit angka 1.000.000?","options":[{"id":"A","text":"5"},{"id":"B","text":"6"},{"id":"C","text":"7"},{"id":"D","text":"8"},{"id":"E","text":"9"}],"correct":"C"},
+  {"code":"ET08","question":"Jika x = 5, berapa nilai 3x² - 2x + 1?","options":[{"id":"A","text":"56"},{"id":"B","text":"66"},{"id":"C","text":"70"},{"id":"D","text":"72"},{"id":"E","text":"76"}],"correct":"B"},
+  {"code":"ET09","question":"0,125 dalam bentuk pecahan adalah...","options":[{"id":"A","text":"1/4"},{"id":"B","text":"1/5"},{"id":"C","text":"1/6"},{"id":"D","text":"1/7"},{"id":"E","text":"1/8"}],"correct":"E"},
+  {"code":"ET10","question":"25 × 16 = ?","options":[{"id":"A","text":"300"},{"id":"B","text":"350"},{"id":"C","text":"400"},{"id":"D","text":"425"},{"id":"E","text":"450"}],"correct":"C"}
+]

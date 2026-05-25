@@ -11,6 +11,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             RbacSeeder::class,
             AssessmentSeeder::class,
+            AssessmentQuestionsSeeder::class,
             OrganizationSeeder::class,
             SuperadminSeeder::class,
             AdminSeeder::class,

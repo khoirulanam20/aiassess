@@ -1,0 +1,9 @@
+{
+  "Very Low": {"title":"Sangat Rendah","description":"Skor menunjukkan kapasitas penalaran abstrak yang perlu dikembangkan. Disarankan untuk melatih kemampuan pemecahan masalah secara bertahap.","advice":"Fokus pada pengembangan kemampuan analitis dasar melalui latihan pola dan sequences sederhana."},
+  "Low": {"title":"Rendah","description":"Kemampuan penalaran abstrak berada di bawah rata-rata. Masih terdapat potensi yang dapat dikembangkan dengan latihan rutin.","advice":"Latih kemampuan berpikir logis dengan teka-teki dan puzzle secara rutin."},
+  "Below Average": {"title":"Di Bawah Rata-rata","description":"Kemampuan penalaran abstrak sedikit di bawah rata-rata populasi umum.","advice":"Tingkatkan pemahaman pola dan hubungan dengan latihan soal analogi secara berkala."},
+  "Average": {"title":"Rata-rata","description":"Kemampuan penalaran abstrak berada pada level rata-rata populasi umum. Cukup untuk menyelesaikan masalah sehari-hari.","advice":"Pertahankan dan terus asah kemampuan melalui pembelajaran berkelanjutan."},
+  "Above Average": {"title":"Di Atas Rata-rata","description":"Kemampuan penalaran abstrak di atas rata-rata. Memiliki potensi yang baik untuk analisis kompleks.","advice":"Manfaatkan kemampuan ini dalam pemecahan masalah kompleks dan pengambilan keputusan strategis."},
+  "Superior": {"title":"Unggul","description":"Kemampuan penalaran abstrak yang unggul. Mampu menganalisis pola kompleks dan memecahkan masalah rumit.","advice":"Gunakan kemampuan ini untuk menangani tantangan intelektual yang membutuhkan pemikiran tingkat tinggi."},
+  "Very Superior": {"title":"Sangat Unggul","description":"Kemampuan penalaran abstrak yang sangat unggul. Termasuk dalam kategori kognitif tertinggi.","advice":"Kembangkan potensi ini dalam bidang yang membutuhkan pemikiran strategis, penelitian, atau inovasi."}
+}

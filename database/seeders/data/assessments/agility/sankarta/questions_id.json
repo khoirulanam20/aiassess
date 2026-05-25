@@ -1,0 +1,12 @@
+[
+  {"code":"SK01","question":"Pola: 2, 4, 8, 16, ?","options":[{"id":"A","text":"24"},{"id":"B","text":"30"},{"id":"C","text":"32"},{"id":"D","text":"48"},{"id":"E","text":"64"}],"correct":"C"},
+  {"code":"SK02","question":"Pola: A, C, F, J, ?","options":[{"id":"A","text":"M"},{"id":"B","text":"N"},{"id":"C","text":"O"},{"id":"D","text":"P"},{"id":"E","text":"Q"}],"correct":"C"},
+  {"code":"SK03","question":"Pola: 1, 1, 2, 3, 5, ?","options":[{"id":"A","text":"7"},{"id":"B","text":"8"},{"id":"C","text":"9"},{"id":"D","text":"10"},{"id":"E","text":"11"}],"correct":"B"},
+  {"code":"SK04","question":"Pola: AB, CD, EF, GH, ?","options":[{"id":"A","text":"HI"},{"id":"B","text":"IJ"},{"id":"C","text":"JK"},{"id":"D","text":"KL"},{"id":"E","text":"LM"}],"correct":"B"},
+  {"code":"SK05","question":"Pola: 3, 6, 11, 18, ?","options":[{"id":"A","text":"25"},{"id":"B","text":"27"},{"id":"C","text":"29"},{"id":"D","text":"31"},{"id":"E","text":"33"}],"correct":"B"},
+  {"code":"SK06","question":"Pola: ○□○△○◇, bentuk selanjutnya?","options":[{"id":"A","text":"○"},{"id":"B","text":"□"},{"id":"C","text":"△"},{"id":"D","text":"◇"},{"id":"E","text":"☆"}],"correct":"A"},
+  {"code":"SK07","question":"Pola: 100, 81, 64, 49, ?","options":[{"id":"A","text":"36"},{"id":"B","text":"35"},{"id":"C","text":"30"},{"id":"D","text":"25"},{"id":"E","text":"16"}],"correct":"A"},
+  {"code":"SK08","question":"Pola: AZ, BY, CX, DW, ?","options":[{"id":"A","text":"EV"},{"id":"B","text":"EU"},{"id":"C","text":"FV"},{"id":"D","text":"FU"},{"id":"E","text":"EX"}],"correct":"A"},
+  {"code":"SK09","question":"Pola: 1.1, 2.2, 3.4, 4.8, ?","options":[{"id":"A","text":"5.12"},{"id":"B","text":"5.16"},{"id":"C","text":"6.12"},{"id":"D","text":"6.16"},{"id":"E","text":"7.12"}],"correct":"B"},
+  {"code":"SK10","question":"Pola: 8, 27, 64, 125, ?","options":[{"id":"A","text":"169"},{"id":"B","text":"196"},{"id":"C","text":"216"},{"id":"D","text":"244"},{"id":"E","text":"256"}],"correct":"C"}
+]

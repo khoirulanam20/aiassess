@@ -1,0 +1,12 @@
+{
+  "type": "S",
+  "name": "Steadiness",
+  "title": "The Supporter",
+  "description": "Anda adalah pribadi yang sabar, hangat, dan konsisten. Anda unggul dalam menciptakan harmoni tim, mendukung orang lain, dan menjaga stabilitas. Anda termotivasi oleh kerja sama dan lingkungan yang terprediksi.",
+  "strengths": ["Setia", "Pendengar yang baik", "Konsisten", "Kolaboratif", "Sabar"],
+  "weaknesses": ["Terlalu mudah setuju", "Kurang inisiatif", "Sulit beradaptasi dengan perubahan", "Cenderung menghindari konflik"],
+  "communication_style": "Ramah, suportif, dan diplomatis",
+  "motivations": ["Stabilitas", "Harmoni", "Kerja tim", "Penghargaan", "Keamanan"],
+  "fears": ["Perubahan drastis", "Konflik", "Kehilangan keamanan", "Ketidakpastian"],
+  "career_paths": ["HRD", "Konselor", "Perawat", "Guru", "Administrator"]
+}

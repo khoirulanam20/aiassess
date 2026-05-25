@@ -1,0 +1,122 @@
+{
+  "N": {
+    "name": "Need to Achieve",
+    "title": "Kebutuhan Berprestasi",
+    "description": "Dorongan untuk mencapai hasil yang unggul dan memenuhi standar tinggi.",
+    "levels": {
+      "0-2": {"level": "Rendah", "description": "Tidak terlalu terdorong oleh target atau standar tinggi. Cenderung puas dengan hasil yang cukup baik.", "advice": "Cobalah menetapkan target pribadi yang lebih menantang untuk mengembangkan potensi Anda."},
+      "3-4": {"level": "Cukup", "description": "Memiliki dorongan berprestasi yang moderat. Dapat bekerja menuju target jika diperlukan.", "advice": "Identifikasi area yang Anda minati dan tetapkan target yang spesifik untuk meningkatkan motivasi."},
+      "5-6": {"level": "Sedang", "description": "Memiliki motivasi berprestasi yang cukup baik. Menikmati pencapaian target.", "advice": "Terus tantang diri Anda dengan target baru dan ukur kemajuan secara berkala."},
+      "7-8": {"level": "Tinggi", "description": "Sangat termotivasi oleh pencapaian. Selalu berusaha memberikan hasil terbaik.", "advice": "Seimbangkan dorongan berprestasi dengan kesejahteraan pribadi untuk menghindari kelelahan."},
+      "9-9": {"level": "Sangat Tinggi", "description": "Dorongan berprestasi yang sangat kuat. Menetapkan standar sangat tinggi untuk diri sendiri.", "advice": "Pastikan Anda tidak terlalu kritis terhadap diri sendiri. Rayakan pencapaian kecil di sepanjang jalan."}
+    }
+  },
+  "G": {
+    "name": "Need to be Noticed",
+    "title": "Kebutuhan Diperhatikan",
+    "description": "Kebutuhan untuk mendapatkan perhatian, pengakuan, dan apresiasi dari orang lain.",
+    "levels": {
+      "0-2": {"level": "Rendah", "description": "Tidak terlalu membutuhkan perhatian atau pengakuan dari orang lain. Nyaman bekerja di belakang layar.", "advice": "Sesekali cobalah untuk lebih menonjolkan kontribusi Anda agar orang lain menyadari potensi Anda."},
+      "3-4": {"level": "Cukup", "description": "Kadang menghargai pengakuan tetapi tidak terlalu bergantung padanya.", "advice": "Jangan ragu untuk menerima pujian dan pengakuan saat Anda berhasil mencapai sesuatu."},
+      "5-6": {"level": "Sedang", "description": "Menikmati pengakuan atas prestasi dan kontribusi. Seimbang antara bekerja dalam tim dan menonjol.", "advice": "Terus berkontribusi dengan baik. Pengakuan akan datang secara alami dari kualitas kerja Anda."},
+      "7-8": {"level": "Tinggi", "description": "Secara aktif mencari pengakuan dan apresiasi. Menikmati menjadi pusat perhatian.", "advice": "Pastikan Anda juga memberi pengakuan kepada orang lain untuk membangun hubungan timbal balik."},
+      "9-9": {"level": "Sangat Tinggi", "description": "Sangat membutuhkan perhatian dan pengakuan. Bisa menjadi motivator yang kuat.", "advice": "Kenali bahwa tidak semua kontribusi perlu diakui secara publik. Fokus juga pada kepuasan internal."}
+    }
+  },
+  "A": {
+    "name": "Need for Authority",
+    "title": "Kebutuhan Otoritas",
+    "description": "Kebutuhan untuk memiliki wewenang, kekuasaan, dan kontrol dalam situasi kerja.",
+    "levels": {
+      "0-2": {"level": "Rendah", "description": "Tidak terlalu membutuhkan wewenang formal. Nyaman mengikuti arahan orang lain.", "advice": "Tingkatkan rasa percaya diri dalam pengambilan keputusan dengan mengambil tanggung jawab yang lebih besar."},
+      "3-4": {"level": "Cukup", "description": "Kadang merasa perlu untuk memiliki wewenang dalam situasi tertentu.", "advice": "Latih kemampuan pengambilan keputusan Anda dengan memimpin proyek kecil."},
+      "5-6": {"level": "Sedang", "description": "Memiliki kebutuhan wewenang yang seimbang. Dapat mengambil kendali saat diperlukan.", "advice": "Terus kembangkan kemampuan kepemimpinan dan pengambilan keputusan Anda."},
+      "7-8": {"level": "Tinggi", "description": "Secara aktif mencari posisi dengan wewenang dan tanggung jawab.", "advice": "Gunakan wewenang Anda dengan bijak dan pastikan Anda tetap mendengarkan masukan dari tim."},
+      "9-9": {"level": "Sangat Tinggi", "description": "Kebutuhan akan wewenang yang sangat kuat. Ingin memiliki kontrol penuh.", "advice": "Seimbangkan otoritas dengan partisipasi tim. Kepemimpinan yang efektif juga melibatkan pemberdayaan orang lain."}
+    }
+  },
+  "L": {
+    "name": "Need to Lead",
+    "title": "Kebutuhan Memimpin",
+    "description": "Kebutuhan untuk memimpin, mengarahkan, dan mempengaruhi orang lain.",
+    "levels": {
+      "0-2": {"level": "Rendah", "description": "Tidak tertarik pada peran kepemimpinan. Lebih nyaman menjadi anggota tim.", "advice": "Setiap orang memiliki peran penting dalam tim. Fokus pada kekuatan Anda sebagai pendukung yang handal."},
+      "3-4": {"level": "Cukup", "description": "Kadang bersedia memimpin jika diperlukan, tetapi tidak aktif mencarinya.", "advice": "Cobalah sesekali mengambil peran kepemimpinan kecil untuk mengembangkan keterampilan baru."},
+      "5-6": {"level": "Sedang", "description": "Memiliki potensi kepemimpinan yang baik. Dapat memimpin tim dengan efektif.", "advice": "Terus asah kemampuan kepemimpinan Anda melalui pelatihan dan pengalaman langsung."},
+      "7-8": {"level": "Tinggi", "description": "Secara aktif mencari kesempatan untuk memimpin dan mengarahkan orang lain.", "advice": "Kembangkan gaya kepemimpinan yang inklusif. Pemimpin terbaik memberdayakan timnya."},
+      "9-9": {"level": "Sangat Tinggi", "description": "Kebutuhan memimpin yang sangat kuat. Cenderung mengambil alih dalam situasi kelompok.", "advice": "Pastikan Anda memberi ruang bagi anggota tim untuk tumbuh dan mengambil inisiatif."}
+    }
+  },
+  "P": {
+    "name": "Need for Affiliation",
+    "title": "Kebutuhan Afiliasi",
+    "description": "Kebutuhan untuk menjalin hubungan interpersonal yang hangat dan akrab dengan orang lain.",
+    "levels": {
+      "0-2": {"level": "Rendah", "description": "Tidak terlalu membutuhkan hubungan dekat dengan rekan kerja. Nyaman bekerja sendiri.", "advice": "Cobalah membangun koneksi ringan dengan rekan kerja. Jaringan sosial yang baik mendukung karir."},
+      "3-4": {"level": "Cukup", "description": "Menghargai hubungan kerja yang baik tetapi tidak terlalu bergantung pada interaksi sosial.", "advice": "Partisipasi dalam kegiatan tim dapat memperkuat hubungan kerja Anda."},
+      "5-6": {"level": "Sedang", "description": "Menikmati kerja sama tim dan hubungan interpersonal yang harmonis.", "advice": "Seimbangkan antara membangun hubungan dan mencapai target kinerja."},
+      "7-8": {"level": "Tinggi", "description": "Sangat menghargai hubungan harmonis dan kerja sama tim yang erat.", "advice": "Pastikan kebutuhan afiliasi tidak menghalangi pengambilan keputusan objektif saat diperlukan."},
+      "9-9": {"level": "Sangat Tinggi", "description": "Sangat membutuhkan hubungan dekat dengan orang lain. Konflik sangat mengganggu.", "advice": "Kembangkan ketahanan dalam menghadapi konflik interpersonal. Tidak semua perbedaan perlu dihindari."}
+    }
+  },
+  "I": {
+    "name": "Need to be Independent",
+    "title": "Kebutuhan Mandiri",
+    "description": "Kebutuhan untuk bekerja secara independen, mengambil keputusan sendiri, dan tidak terlalu bergantung pada orang lain.",
+    "levels": {
+      "0-2": {"level": "Rendah", "description": "Nyaman bekerja dengan arahan dan bimbingan dari orang lain. Tidak masalah dengan ketergantungan.", "advice": "Cobalah mengambil lebih banyak inisiatif dan kepercayaan diri dalam menyelesaikan tugas."},
+      "3-4": {"level": "Cukup", "description": "Kadang ingin bekerja mandiri, tetapi masih nyaman dengan arahan.", "advice": "Tingkatkan kemandirian secara bertahap dengan mengambil tanggung jawab penuh pada proyek kecil."},
+      "5-6": {"level": "Sedang", "description": "Memiliki keseimbangan antara kemandirian dan kerja sama tim yang baik.", "advice": "Pertahankan kemandirian Anda sambil tetap terbuka untuk kolaborasi saat diperlukan."},
+      "7-8": {"level": "Tinggi", "description": "Sangat menghargai kebebasan dan otonomi dalam bekerja.", "advice": "Pastikan kemandirian Anda tidak membuat Anda terisolasi dari tim. Komunikasi tetap penting."},
+      "9-9": {"level": "Sangat Tinggi", "description": "Sangat mandiri dan cenderung menolak campur tangan orang lain dalam pekerjaan.", "advice": "Belajarlah untuk menerima masukan dan arahan. Kolaborasi kadang menghasilkan solusi yang lebih baik."}
+    }
+  },
+  "T": {
+    "name": "Need for Change",
+    "title": "Kebutuhan Perubahan",
+    "description": "Kebutuhan untuk variasi, pembaruan, dan perubahan dalam pekerjaan dan lingkungan.",
+    "levels": {
+      "0-2": {"level": "Rendah", "description": "Nyaman dengan rutinitas dan tidak terlalu membutuhkan perubahan.", "advice": "Stabilitas adalah kekuatan Anda. Sesekali cobalah hal baru untuk memperluas wawasan."},
+      "3-4": {"level": "Cukup", "description": "Kadang menikmati perubahan tetapi tetap nyaman dengan rutinitas.", "advice": "Eksplorasi minat baru secara bertahap untuk menemukan variasi yang sesuai."},
+      "5-6": {"level": "Sedang", "description": "Menikmati variasi dan pembaruan dalam batas yang wajar.", "advice": "Manfaatkan energi kreatif Anda untuk memperkenalkan inovasi dalam pekerjaan."},
+      "7-8": {"level": "Tinggi", "description": "Secara aktif mencari perubahan dan variasi. Cepat bosan dengan rutinitas.", "advice": "Salurkan kebutuhan perubahan Anda melalui proyek-proyek inovatif dan pengembangan diri."},
+      "9-9": {"level": "Sangat Tinggi", "description": "Sangat membutuhkan perubahan konstan. Rutinitas terasa sangat membosankan.", "advice": "Pastikan kebutuhan perubahan tidak mengganggu konsistensi dan keandalan kerja Anda dalam jangka panjang."}
+    }
+  },
+  "V": {
+    "name": "Need to be Vigorous",
+    "title": "Kebutuhan Vigor",
+    "description": "Tingkat energi, vitalitas, dan semangat fisik dalam menjalankan aktivitas.",
+    "levels": {
+      "0-2": {"level": "Rendah", "description": "Cenderung memiliki energi yang rendah. Lebih suka bekerja dengan tempo santai.", "advice": "Perhatikan kondisi fisik dan kesehatan Anda. Olahraga teratur dapat meningkatkan energi."},
+      "3-4": {"level": "Cukup", "description": "Memiliki energi yang cukup untuk menjalankan aktivitas sehari-hari.", "advice": "Jaga keseimbangan antara aktivitas dan istirahat untuk mempertahankan tingkat energi."},
+      "5-6": {"level": "Sedang", "description": "Memiliki tingkat energi yang baik. Dapat bekerja dengan tempo sedang hingga cepat.", "advice": "Manfaatkan energi Anda secara produktif. Hindari kegiatan yang menguras energi secara tidak perlu."},
+      "7-8": {"level": "Tinggi", "description": "Enerjik dan aktif. Menikmati aktivitas fisik dan pekerjaan yang menuntut stamina.", "advice": "Salurkan energi Anda ke kegiatan yang produktif. Pastikan Anda juga memberi waktu untuk istirahat."},
+      "9-9": {"level": "Sangat Tinggi", "description": "Sangat energik dan aktif. Sulit diam dan selalu ingin bergerak.", "advice": "Energi tinggi adalah aset berharga. Arahkan ke kegiatan konstruktif dan jaga keseimbangan dengan istirahat cukup."}
+    }
+  },
+  "S": {
+    "name": "Need to be Sociable",
+    "title": "Kebutuhan Bersosialisasi",
+    "description": "Kebutuhan untuk berinteraksi, bersosialisasi, dan membangun hubungan dengan orang lain.",
+    "levels": {
+      "0-2": {"level": "Rendah", "description": "Tidak terlalu membutuhkan interaksi sosial. Lebih suka menyendiri atau kelompok kecil.", "advice": "Interaksi sosial secukupnya tetap penting untuk jaringan profesional. Coba tingkatkan secara bertahap."},
+      "3-4": {"level": "Cukup", "description": "Dapat bersosialisasi saat diperlukan tetapi tidak mencari interaksi sosial secara aktif.", "advice": "Keterampilan sosial yang baik tetap penting. Ikuti kegiatan tim sesekali untuk memperluas jaringan."},
+      "5-6": {"level": "Sedang", "description": "Menikmati interaksi sosial dan memiliki keseimbangan yang baik.", "advice": "Gunakan kemampuan sosial Anda untuk membangun hubungan profesional yang bermanfaat."},
+      "7-8": {"level": "Tinggi", "description": "Sangat sosial dan menikmati interaksi dengan banyak orang.", "advice": "Kemampuan sosial Anda adalah aset. Pastikan Anda juga meluangkan waktu untuk refleksi diri."},
+      "9-9": {"level": "Sangat Tinggi", "description": "Sangat membutuhkan interaksi sosial. Tidak nyaman sendirian dalam waktu lama.", "advice": "Pastikan kebutuhan sosial tidak mengganggu produktivitas. Keseimbangan antara interaksi dan fokus kerja penting."}
+    }
+  },
+  "R": {
+    "name": "Need for Rules",
+    "title": "Kebutuhan Aturan",
+    "description": "Kebutuhan untuk mengikuti aturan, prosedur, dan struktur yang jelas dalam bekerja.",
+    "levels": {
+      "0-2": {"level": "Rendah", "description": "Tidak terlalu terikat pada aturan. Fleksibel dan kadang mengabaikan prosedur formal.", "advice": "Meskipun fleksibilitas penting, memahami dan mengikuti aturan dasar organisasi tetap diperlukan."},
+      "3-4": {"level": "Cukup", "description": "Kadang mengikuti aturan tetapi tidak kaku dalam penerapannya.", "advice": "Tingkatkan konsistensi dalam mengikuti prosedur untuk membangun kepercayaan dan keandalan."},
+      "5-6": {"level": "Sedang", "description": "Memiliki keseimbangan antara kepatuhan pada aturan dan fleksibilitas.", "advice": "Pertahankan keseimbangan ini. Aturan ada untuk dipatuhi, tetapi kadang perlu adaptasi."},
+      "7-8": {"level": "Tinggi", "description": "Sangat menghargai aturan, prosedur, dan struktur yang jelas.", "advice": "Pastikan kepatuhan Anda pada aturan tidak menghambat inovasi dan kreativitas."},
+      "9-9": {"level": "Sangat Tinggi", "description": "Sangat kaku dalam mengikuti aturan. Prosedur adalah prioritas utama.", "advice": "Belajarlah untuk lebih fleksibel. Tidak semua situasi memerlukan kepatuhan kaku pada prosedur."}
+    }
+  }
+}

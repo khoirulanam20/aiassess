@@ -1,0 +1,20 @@
+{
+  "autonomy": {
+    "title":"Otonomi","description":"Kemampuan untuk bekerja dan mengambil keputusan secara mandiri tanpa bergantung pada orang lain.","levels":{"low":"Cenderung membutuhkan arahan dan bimbingan dalam bekerja.","medium":"Memiliki keseimbangan antara kemandirian dan kerja sama.","high":"Sangat mandiri dan percaya diri dalam mengambil keputusan sendiri."}
+  },
+  "innovativeness": {
+    "title":"Inovasi","description":"Kecenderungan untuk menghasilkan ide-ide baru, kreatif, dan mendorong perubahan.","levels":{"low":"Lebih suka pendekatan tradisional dan terbukti.","medium":"Terbuka pada ide baru tetapi tetap hati-hati.","high":"Sangat kreatif dan selalu mendorong inovasi dan perubahan."}
+  },
+  "risk_taking": {
+    "title":"Pengambilan Risiko","description":"Kesediaan untuk mengambil risiko dalam mengejar peluang bisnis.","levels":{"low":"Cenderung menghindari risiko dan memilih kepastian.","medium":"Berani mengambil risiko terukur dengan analisis yang matang.","high":"Sangat berani mengambil risiko besar untuk hasil yang besar."}
+  },
+  "proactiveness": {
+    "title":"Proaktif","description":"Kemampuan untuk bertindak inisiatif dan mengantisipasi peluang masa depan.","levels":{"low":"Cenderung reaktif dan menunggu instruksi.","medium":"Cukup inisiatif dalam mengidentifikasi peluang.","high":"Sangat proaktif, selalu mencari dan menciptakan peluang baru."}
+  },
+  "competitive_aggressiveness": {
+    "title":"Agresivitas Kompetitif","description":"Kecenderungan untuk secara agresif menantang pesaing dan memasuki pasar baru.","levels":{"low":"Kurang agresif dalam persaingan bisnis.","medium":"Cukup kompetitif dan responsif terhadap pesaing.","high":"Sangat agresif dalam persaingan dan ekspansi pasar."}
+  },
+  "overall": {
+    "title":"Potensi Kewirausahaan","levels":{"low":{"label":"Perlu Pengembangan","description":"Potensi kewirausahaan masih perlu dikembangkan secara signifikan.","advice":"Fokus pada pengembangan satu per satu dimensi kewirausahaan melalui pelatihan dan praktik langsung."},"medium":{"label":"Cukup","description":"Memiliki potensi kewirausahaan yang cukup dengan beberapa area yang perlu ditingkatkan.","advice":"Kembangkan area yang masih lemah dan manfaatkan kekuatan yang sudah dimiliki."},"high":{"label":"Baik","description":"Memiliki potensi kewirausahaan yang baik dengan keseimbangan antar dimensi.","advice":"Tingkatkan ke level unggul dengan fokus pada pengembangan berkelanjutan."},"very_high":{"label":"Sangat Baik","description":"Memiliki potensi kewirausahaan yang sangat baik. Siap untuk memulai dan mengembangkan bisnis.","advice":"Manfaatkan potensi ini dengan memulai proyek kewirausahaan dan terus belajar dari pengalaman."}}
+  }
+}

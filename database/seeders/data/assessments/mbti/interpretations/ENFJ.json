@@ -1,0 +1,7 @@
+{
+  "name": "The Protagonist",
+  "description": "Pemimpin karismatik yang menginspirasi orang lain. ENFJ adalah individu yang hangat, persuasif, dan penuh empati. Mereka memiliki bakat alami untuk memotivasi tim dan mengembangkan potensi orang lain.",
+  "strengths": ["Karismatik", "Empati tinggi", "Komunikator ulung", "Menginspirasi", "Terorganisir"],
+  "weaknesses": ["Terlalu peduli pada pendapat orang", "Cenderung mengabaikan diri sendiri", "Terlalu idealis", "Kurang tegas", "Sulit menerima kegagalan"],
+  "career_paths": ["Manajer SDM", "Konsultan", "Dosen", "Pelatih", "Pemimpin Organisasi"]
+}

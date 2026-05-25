@@ -1,0 +1,58 @@
+{
+  "planning": {
+    "title": "Perencanaan",
+    "description": "Kemampuan untuk merencanakan, menetapkan prioritas, dan menyusun strategi kerja yang efektif.",
+    "strengths": ["Membuat rencana terstruktur", "Menetapkan prioritas dengan baik", "Mengantisipasi risiko"],
+    "weaknesses": ["Kurang detail dalam perencanaan", "Sulit membuat rencana jangka panjang", "Kurang memiliki rencana cadangan"],
+    "advice": "Kembangkan kebiasaan membuat rencana tertulis untuk setiap proyek besar, dan selalu siapkan rencana cadangan."
+  },
+  "organizing": {
+    "title": "Pengorganisasian",
+    "description": "Kemampuan untuk mengatur sumber daya, struktur, dan sistem kerja secara efisien.",
+    "strengths": ["Mengatur sumber daya efisien", "Menciptakan sistem kerja efektif", "Mengkoordinasikan tim"],
+    "weaknesses": ["Kurang terstruktur", "Sulit mengelola banyak tugas", "Kurang efisien dalam alokasi sumber daya"],
+    "advice": "Gunakan alat manajemen proyek untuk melacak tugas, deadline, dan alokasi sumber daya."
+  },
+  "leading": {
+    "title": "Kepemimpinan",
+    "description": "Kemampuan untuk memimpin, memotivasi, dan mengarahkan tim menuju pencapaian tujuan.",
+    "strengths": ["Memotivasi tim", "Memberikan arahan jelas", "Menjadi teladan"],
+    "weaknesses": ["Kurang tegas", "Sulit mengelola konflik", "Kurang menginspirasi"],
+    "advice": "Kembangkan gaya kepemimpinan yang autentik dengan fokus pada pemberdayaan anggota tim."
+  },
+  "controlling": {
+    "title": "Pengendalian",
+    "description": "Kemampuan untuk memonitor, mengevaluasi, dan melakukan koreksi terhadap kinerja dan proses.",
+    "strengths": ["Memonitor kemajuan", "Melakukan evaluasi berkala", "Tindakan korektif tepat waktu"],
+    "weaknesses": ["Kurang melakukan monitoring", "Terlalu longgar dalam kontrol", "Kurang menggunakan indikator kinerja"],
+    "advice": "Tetapkan KPI yang jelas untuk setiap proyek dan lakukan review berkala untuk memastikan pencapaian target."
+  },
+  "decision_making": {
+    "title": "Pengambilan Keputusan",
+    "description": "Kemampuan untuk menganalisis situasi dan mengambil keputusan yang tepat dan tepat waktu.",
+    "strengths": ["Keputusan cepat dan tepat", "Menggunakan data", "Berani mengambil risiko"],
+    "weaknesses": ["Terlalu lambat memutuskan", "Kurang tegas", "Terlalu bergantung pada orang lain"],
+    "advice": "Gunakan kerangka kerja pengambilan keputusan seperti analisis SWOT untuk meningkatkan kualitas keputusan."
+  },
+  "communication": {
+    "title": "Komunikasi",
+    "description": "Kemampuan untuk menyampaikan informasi dengan jelas, mendengarkan aktif, dan berkomunikasi secara efektif.",
+    "strengths": ["Komunikasi jelas", "Mendengarkan aktif", "Umpan balik konstruktif"],
+    "weaknesses": ["Kurang jelas dalam penyampaian", "Sulit menyesuaikan gaya komunikasi", "Kurang terbuka terhadap masukan"],
+    "advice": "Praktikkan active listening dalam setiap interaksi dan sesuaikan gaya komunikasi dengan lawan bicara."
+  },
+  "problem_solving": {
+    "title": "Pemecahan Masalah",
+    "description": "Kemampuan untuk mengidentifikasi, menganalisis, dan menyelesaikan masalah secara efektif.",
+    "strengths": ["Analisis akar masalah", "Solusi kreatif", "Pendekatan sistematis"],
+    "weaknesses": ["Sulit mengidentifikasi masalah", "Solusi kurang inovatif", "Kurang analitis"],
+    "advice": "Gunakan metode pemecahan masalah terstruktur seperti PDCA (Plan-Do-Check-Act) untuk hasil yang lebih konsisten."
+  },
+  "delegation": {
+    "title": "Delegasi",
+    "description": "Kemampuan untuk mendelegasikan tugas dan wewenang kepada anggota tim secara efektif.",
+    "strengths": ["Percaya diri mendelegasikan", "Memberikan instruksi jelas", "Memantau tanpa over-managing"],
+    "weaknesses": ["Sulit melepas kontrol", "Kurang percaya pada tim", "Delegasi tidak sesuai kompetensi"],
+    "advice": "Kenali kompetensi anggota tim dan delegasikan tugas sesuai kekuatan mereka. Berikan kepercayaan dan dukungan."
+  }
+}
