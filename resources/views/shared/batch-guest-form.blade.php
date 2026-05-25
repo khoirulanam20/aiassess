@@ -1,25 +1,26 @@
 <x-guest-minimal-layout>
     <div class="mx-auto max-w-md px-6 py-12">
         <div class="card text-center">
-            <div class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-sky-100">
-                <svg class="h-8 w-8 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                </svg>
+            <div class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-sky-100 dark:bg-sky-900/30">
+                <x-ui.icon name="clipboard" class="h-8 w-8 text-sky-600 dark:text-sky-400" />
             </div>
 
-            <h1 class="text-xl font-bold text-ink">{{ __('Kerjakan Assessment') }}</h1>
-            <p class="mt-2 text-sm text-gray-500">
+            <h1 class="text-xl font-bold text-ink dark:text-gray-100">{{ __('Kerjakan Assessment') }}</h1>
+            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
                 {{ __('Masukkan kode akses 6 digit yang Anda terima dari HR.') }}
             </p>
             @if ($batch ?? null)
-                <p class="mt-1 text-sm font-medium text-ink">{{ $batch->name }}</p>
+                <p class="mt-1 text-sm font-medium text-ink dark:text-gray-100">{{ $batch->name }}</p>
             @endif
 
             @if ($errors->any())
-                <div class="mt-4 rounded-lg bg-red-50 p-4 text-sm text-red-600">
-                    @foreach ($errors->all() as $error)
-                        <p>{{ $error }}</p>
-                    @endforeach
+                <div class="alert-danger mt-4" role="alert">
+                    <svg class="alert-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <div class="alert-content">
+                        @foreach ($errors->all() as $error)
+                            <p>{{ $error }}</p>
+                        @endforeach
+                    </div>
                 </div>
             @endif
 
@@ -35,7 +36,7 @@
                         autocomplete="off"
                         maxlength="8"
                         placeholder="000000"
-                        class="form-input text-center font-mono text-2xl tracking-[0.5em]"
+                        class="input-field text-center font-mono text-2xl tracking-[0.5em]"
                         required
                         autofocus
                     >

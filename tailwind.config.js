@@ -50,7 +50,7 @@ export default {
                 },
                 ink: {
                     DEFAULT: '#020617',
-                    muted: '#64748B',
+                    muted: '#475569',
                     light: '#94A3B8',
                 },
             },
@@ -62,6 +62,25 @@ export default {
                 'card': '0 1px 3px 0 rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.06)',
                 'card-hover': '0 4px 12px 0 rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.08)',
                 'dropdown': '0 4px 16px 0 rgba(15, 23, 42, 0.12)',
+            },
+            animation: {
+                'skeleton': 'skeleton 1.5s ease-in-out infinite',
+                'fade-in': 'fadeIn 0.2s ease-out',
+                'slide-up': 'slideUp 0.3s ease-out',
+            },
+            keyframes: {
+                skeleton: {
+                    '0%, 100%': { opacity: '0.4' },
+                    '50%': { opacity: '0.8' },
+                },
+                fadeIn: {
+                    '0%': { opacity: '0' },
+                    '100%': { opacity: '1' },
+                },
+                slideUp: {
+                    '0%': { opacity: '0', transform: 'translateY(8px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                },
             },
         },
     },

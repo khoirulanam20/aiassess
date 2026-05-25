@@ -116,7 +116,7 @@ class AssessmentBatchTest extends TestCase
             'guest_batch_session' => $cookie->getValue(),
         ]);
         $take->assertOk();
-        $take->assertSee('Kembali ke daftar assessment');
+        $take->assertSee('Berikutnya');
     }
 
     public function test_batch_show_lists_candidates_by_name_only(): void
